@@ -38,7 +38,7 @@ description: This module uploads a configuration onto the switch stored locally 
 - name: Copy Running Config from local JSON file as JSON
   aoscx_upload_config:
     config_name: 'running-config'
-    remote_config_file_tftp_path: '/user/admin/running.json'
+    config_file: '/user/admin/running.json'
 
 - name: Copy Running Config from TFTP server as JSON
   aoscx_upload_config:
